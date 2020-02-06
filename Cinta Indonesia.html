@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cinta Jawa Timur</title>
+    <style>
+    *{
+        box-sizing:border-box;
+    }
+    [class*="col-"]{
+        padding: 15px; float:left; width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .jtext{
+        font-family: arial;
+        font-style: oblique;
+        font-size: 30px;
+    }
+
+    .active{
+        background-color: #4CAF50;
+    }
+
+    h2{
+        text-shadow: 3px 2px rgb(117, 5, 245);
+    }
+
+    .bgimage{
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../Background3.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    img {
+        opacity: 0.5;
+    }
+
+    img:hover {
+        opacity: 1.0;
+    }
+
+    .judul{
+        color: rgb(166, 192, 50);
+        margin-top: 70px;
+        font-family: arial;
+        font-style: oblique;
+        font-size: 75px;
+        padding-top: 200px;
+        color: white;
+    }
+
+    .btn-green{ 
+        padding:10px; 
+        background: #338401; 
+        color:#fff;
+    }
+
+    .btn-blue{
+        padding:10px;
+        background: #02496d;
+        color: #fff;
+    }
+
+    .btn-red{
+        padding:10px;
+        background:red;
+        color:#fff;
+    }
+    .ridge{
+        border-style: ridge; 
+        border-width: 4px;
+    }
+    .round{
+        border-radius:20px;
+    }
+    .image{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        margin: 0 auto;
+        border: 20px Double rgb(57, 57, 109);
+    }
+
+    .Gambar{
+        width:200px;
+        height:200px;
+        border-radius:10%;
+        margin: 0 auto;
+        border: 20px Double rgb(57, 57, 109);
+    }
+    .container{
+        width:80%;
+        margin: 0 auto;
+    }
+    .box{
+        text-align:center;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#C1">Beranda</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Tempat Wisata</a>
+          <div class="dropdown-content">
+            <a href="#C2">Pantai</a>
+            <a href="#C3">Gunung</a>
+          </div>
+        </li>
+        <li><a href="#C4">Makanan</a></li>
+        <li><a href="#C5">Budaya</a></li>
+        <li style="float:right"><a class="active" href="C6">About</a></li>
+    </ul>
+    <div class="bgimage col-12" id="C1">
+        <h1 class="judul" align="center">I Love Jawa Timur</h1>
+    </div>
+    
+    <div class="container">
+        <div class="col-12" id="C2">
+            <h2 align="center" class="jtext">Pantai Jawa Timur</h2>
+        <div class="box col-3 col-s-6">
+            <img src="../pantai klayar.jpg"class="Gambar">
+            <p class="btn-green ridge round"><b>Pantai Klayar</b></p>
+            <p>
+                Pantai Klayar adalah sebuah pantai dengan pasir putih dan batu karang serta tebing-tebing batu yang mengelilingi. Pantai ini terletak di Pacitan, Jawa Timur dan berbatasan dengan Wonogiri, Jawa Tengah. Tepatnya berada di Desa Sendang, Kecamatan Donorojo, Kabupaten Pacitan, Provinsi Jawa Timur.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Pantai sanggar.jpg"class="image">
+            <p class="btn-green ridge round"><b>Pantai Sanggar</b></p>
+            <p>
+                Pantai ini masih satu jalur dengan Pantai lain yang ada di Kota Tulungagung seperti Pantai Ngalur dan Pantai Sine. Lokasinya yang sejalur dengan objek wisata lain membantu Anda untuk sekaligus mengunjungi tiga Pantai tersebut secara bergantian. Pantai Sanggar memang belum diperhatikan oleh Pemerintah Kota Tulungagung sehingga objek wisatanya belum berkembang.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Pantai prigi.jpg"class="image">
+            <p class="btn-green ridge round"><b>Pantai Prigi</b></p>
+            <p>
+                Pantai Prigi adalah pantai di pesisir selatan yang terletak di tepi Samudera Indonesia secara administratif masuk wilayah Desa Tasimadu, Kecamatan Watulimo, Kabupaten Trenggalek, Jawa Timur, Indonesia. Jarak dari pusat kota trenggalek sekitar 48km. Sepanjang 4 km dari pantai ini kita bisa menikmati pemandangan yang indah, ombak yang cukup keras, dan angin pantai yang begitu segar.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Pantai 3 Warna.jpg"class="Gambar">
+            <p class="btn-green ridge round"><b>Pantai 3 Warna</b></p>
+            <p>
+                Indonesia memiliki beragam Wisata yang layak untuk dikunjungi, mulai dari Wisata Budaya, Wisata Kuliner, hingga Wisata alam. Salah satu wisata alam yang terkenal di Indonesia adalah Wisata Pantai. Mungkin Pantai yang terkenal di Indonesia terletak di Bali atau Lombok. Tapi siapa sangka kalau di Pulau Jawa juga terdapat daerah dengan potensi Wisata Pantai yang sangat besar, yaitu Malang.
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12" id="C3">
+            <h2 align="center" class="jtext">Gunung Jawa Timur</h2>
+        <div class="box col-3 col-s-6">
+            <img src ="../Gunung Semeru.jpg"class="image">
+            <p class="btn-red ridge round"><b>Gunung Semeru</b></p>
+            <p>
+                Gunung Semeru adalah sebuah gunung berapi kerucut di Jawa Timur, Indonesia. Gunung Semeru merupakan gunung tertinggi di Pulau Jawa dengan puncaknya Mahameru 3.676 meter dari permukaan laut (mdpl).
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src ="../Gunung Arjuno.jpg"class="Gambar">
+            <p class="btn-red ridge round"><b>Gunung Arjuno</b></p>
+            <p>
+                Gunung Arjuno (terkadang dieja Gunung Arjuna) adalah sebuah gunung berapi kerucut (istirahat) di Jawa Timur, Indonesia dengan ketinggian 3.339 m dpl. Gunung Arjuno secara administratif terletak di perbatasan Kota Batu, Kabupaten Malang, dan Kabupaten Pasuruan dan berada di bawah pengelolaan Taman Hutan Raya Raden Soerjo.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src ="../Gunung Bromo.jpg"class="Gambar">
+            <p class="btn-red ridge round"><b>Gunung Bromo</b></p>
+            <p>
+                Gunung Bromo (dari bahasa Sanskerta: Brahma, salah seorang Dewa Utama dalam agama Hindu) atau dalam bahasa Tengger dieja "Brama", adalah sebuah gunung berapi aktif di Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.329 meter di atas permukaan laut dan berada dalam empat wilayah kabupaten, yakni Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan Kabupaten Malang.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src ="../Gunung Kelud.jpg"class="image">
+            <p class="btn-red ridge round"><b>Gunung Kelud</b></p>
+            <p>
+                Gunung Kelud adalah sebuah gunung berapi di Provinsi Jawa Timur, Indonesia, yang tergolong aktif. Gunung ini berada di perbatasan antara Kabupaten Kediri, Kabupaten Blitar, dan Kabupaten Malang, kira-kira 35 km sebelah timur pusat Kota Kediri dan 25 km sebelah utara pusat Kota Blitar.
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12" id="C4">
+            <h2 align="center" class="jtext">Makanan Jawa Timur</h2>
+        <div class="box col-3 col-s-6">
+            <img src="../Soto.jpg"class="Gambar">
+            <p class="btn-blue ridge round"><b>Soto</b></p>
+            <p>
+                Soto adalah makanan khas Indonesia seperti sop yang terbuat dari kaldu daging dan sayuran.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Rawon.jpg"class="image">
+            <p class="btn-blue ridge round"><b>Rawon</b></p>
+            <p>
+                Rawon adalah masakan Indonesia berupa sup daging berkuah hitam sebagai campuran bumbu khas yang menggunakan kluwek.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Pecel.jpg"class="image">
+            <p class="btn-blue ridge round"><b>Pecel</b></p>
+            <p>
+                Pecel merupakan makanan yang dikombinasikan dengan bumbu sambal kacang sebagai bahan utamanya dan dicampur dengan aneka jenis sayuran.
+            </p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Rujak Cingur.jpg"class="Gambar">
+            <p class="btn-blue ridge round"><b>Rujak Cingur</b></p>
+            <p>
+                Rujak cingur adalah salah satu makanan tradisional yang mudah ditemukan di daerah Jawa Timur, terutama daerah asalnya Surabaya.
+            </p>
+        </div>
+        </div>
+
+        <div class="col-12" id="C5">
+            <h2 align="center" class="jtext">Budaya Jawa Timur</h2>
+        <div class="box col-3 col-s-6">
+            <img src="../Pakaian Adat.jpg"class="image">
+            <p class="btn-green ridge"><b>Pakaian Adat</b></p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Tari Jawa Timur.jpg"class="Gambar">
+            <p class="btn-green ridge"><b>Tari Adat</b></p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Senjata Tradisional.jpg"class="Gambar">
+            <p class="btn-green ridge"><b>Senjata Tradisional</b></p>
+        </div>
+        <div class="box col-3 col-s-6">
+            <img src="../Rumah Adat.jpg"class="image">
+            <p class="btn-green ridge"><b>Rumah Adat</b></p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
